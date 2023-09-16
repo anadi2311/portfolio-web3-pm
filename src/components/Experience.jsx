@@ -13,8 +13,8 @@ const Experience = () => {
 
   return (
     <div name="experience"  className="mx-auto h-screen w-full bg-gradient-to-b from-gray-700 via-gray-650 to-gray-600 text-white">
-      <div className="max-w-screen-lg h-full p-4 mx-auto flex flex-col justify-center w-full">
-        <div className="flex items-center justify-between mb-20 mt-20">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
+        <div className="flex items-center justify-between mt-10 md:mt-20">
           <h1 className="text-4xl font-bold border-b-4 border-gray-500">
             Experience
           </h1>

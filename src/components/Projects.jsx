@@ -29,6 +29,7 @@ const Projects = () => {
     {
       id: 1,
       src: masterThesis,
+      title:"Master's Thesis - Supply Chain Finance through Blockchains",
       link:'https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0394745',
       code: 'https://github.com/anadi2311/Thesis-Supply-Chain-Finance-and-Blockchain',
       download: false,
@@ -36,6 +37,7 @@ const Projects = () => {
     {
       id: 2,
       src: mcgVuila,
+      title:"Vaccine Distribution using Ethereum and Amazon QLDB",
       link:'https://cic.ubc.ca/project/vaccine-distribution-supply-chain-prototype/',
       code: 'https://github.com/anadi2311/VaccineDistributionMCG',
       download: false,
@@ -43,6 +45,7 @@ const Projects = () => {
     {
       id: 3,
       src: portfolio,
+      title:"Portfolio using React, Vite and Tailwind",
       link:'https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0394745',
       code:'https://github.com/anadi2311/Thesis-Supply-Chain-Finance-and-Blockchain',
       download: true,
@@ -50,6 +53,7 @@ const Projects = () => {
     {
       id: 4,
       src: worldOfTulips,
+      title:"Tulip NFT Minting and Selling Marketplace",
       link:'/world_of_tulips.pdf',
       code: 'https://github.com/The-CodeBreakeR/world_of_tulips',
       download: false,
@@ -57,6 +61,7 @@ const Projects = () => {
     {
       id: 5,
       src: blockchainApi,
+      title:"Unified APIs for fetching data on 150+ Blockchains",
       link:'https://www.covalenthq.com/docs/api/#/overview',
       code: 'NA',
       download: true,
@@ -64,6 +69,7 @@ const Projects = () => {
     {
       id: 6,
       src: increment,
+      title:"Increment - Analyze Data of 150+ Blockchains ",
       link:'https://www.covalenthq.com/platform/increment/#/',
       code: 'NA',
       download: false,
@@ -76,21 +82,25 @@ const Projects = () => {
       name="projects"
       className="bg-gradient-to-b from-gray-600 via-gray-550 to-gray-500 text-white md:h-screen"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full ">
+        <div className="pb-8 mt-10 md:mt-20">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
-          <p className="py-6 text-xl">Check out some of my work right here</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, link, code }) => (
-            <div key={id} className="shadow-md shadow-white rounded-b-lg">
+          {portfolios.map(({ id, title,src, link, code }) => (
+            <div key={id} className="shadow-md shadow-white rounded-b-lg ">
+              <div className=" w-full h-5 rounded-t-md bg-black border-white border-b-2">
+                <p className="text-center">
+                  {title}
+                </p>
+              </div>
               <img
                 src={src}
                 alt=""
-                className="w-full h-60 object-cover rounded-t-md duration-200 hover:scale-110 hover:rounded-md"
+                className="w-full h-48  md:h-30 object-cover duration-200 hover:scale-110 hover:rounded-md"
               />
               <div className="flex justify-center h-10">
                 <a

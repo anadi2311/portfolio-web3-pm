@@ -4,7 +4,7 @@ import { ImNewTab } from 'react-icons/im';
 const Timeline = ({ events, showAll, toggleShowAll }) => {
   return (
     <div>
-      <div className={`border-l-2 border-r-2 rounded-md border-gray-300 relative min-h-[400px]  overflow-y-auto ${showAll ? 'max-h-full' : 'max-h-[800px]'} max-w-[600px]`} style={{ minWidth: '500px' }}>
+      <div className={`border-l-2 border-r-2 rounded-md border-gray-300 relative min-h-[400px]  overflow-y-auto ${showAll ? 'max-h-[800px]min-w-[700px] md:min-w-[600px] ' : 'max-h-[700px] md:max-h-[450px] min-w-[800px] md:min-w-[900px]'} max-w-[600px]`}>
         {events.map((event, index) => (
           <div
             key={index}
