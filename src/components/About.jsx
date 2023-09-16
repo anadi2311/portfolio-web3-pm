@@ -5,16 +5,16 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-gray-700 text-white"
+      className="w-full h-screen  bg-gradient-to-b from-gray-800 to-gray-700 text-white"
     >
-      <div className="max-w-screen-lg h-full p-4 mx-auto flex flex-col justify-center w-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+      <div className="max-w-screen-lg  p-4 mx-auto flex flex-col justify-center w-full">
+        <div className="pb-8 mt-10 md:mt-20">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
             About
           </p>
         </div>
 
-        <p className="text-xl mt-20">
+        <p className="text-xl">
           Born and raised in a small but ancient town of Ujjain, India, I completed my graduation and moved to Vancouver, British Columbia, with just one goal in mind - finding a solution for farmer's loan crisis in India.
           Very soon I realized the relevance of cutting-edge technology like Blockchains to create the solution. As a result, I completed my specialization in Blockchains 
           and created the thesis on&nbsp;
@@ -43,12 +43,12 @@ const About = () => {
 
         <br />
 
-        <p className="text-xl">
+        <p className="text-xl ">
           Following are some technologies I have worked with:
         </p>
 
         {/* Add the SkillBar component here */}
-        <div className="mt-20">
+        <div className="text-xl ">
           <SkillBar />
         </div>
       </div>
